@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ky">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Collection — Premium Modest Fashion</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SEARCH OVERLAY -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <input type="text" placeholder="Издөө... (мисалы: жибек хиджаб, премиум абая)">
+            <button class="close-search" id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- Brand Logo with Moon Icon -->
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-moon"></i></span>
+                <span class="logo-text">SARA <small>COLLECTION</small></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Башкы бет</a></li>
+                    <li><a href="#about" class="nav-link">Биз жөнүндө</a></li>
+                    <li><a href="#hijabs" class="nav-link">Хиджабдар</a></li>
+                    <li><a href="#dresses" class="nav-link">Кийимдер</a></li>
+                    <li><a href="#gifts" class="nav-link">Белектер</a></li>
+                    <li><a href="#contact" class="nav-link">Контакттар</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn" id="openSearch" title="Издөө"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="action-btn favorite-btn" title="Избранное">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge favorite-badge">0</span>
+                </button>
+                <button class="action-btn cart-btn" title="Корзина">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge cart-badge">0</span>
+                </button>
+                <a href="#auth" class="btn btn-outline btn-login">Катталуу</a>
+                <button class="hamburger" id="hamburger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="subtitle">MODEST FASHION & ELEGANCE</span>
+                    <h1 class="hero-title">Сиздин стилиңиз.<br>Сиздин Sara Collection.</h1>
+                    <p class="hero-description">Назиктик, жөнөкөйлүк, мусулман диний нарктарын жана заманбап эстетиканы
+                        бириктирген премиум кийимдер.</p>
+                    <div class="hero-buttons">
+                        <a href="#categories" class="btn btn-primary">Каталогду көрүү</a>
+                        <a href="#hijabs" class="btn btn-secondary">Жаңы коллекция</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://cdn.shopify.com/s/files/1/0599/0816/1654/files/t32p7.1.jpg?v=1766025531"
+                        alt="Sara Collection Modest Hijab Fashion" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES SECTION -->
+        <section class="section categories" id="categories">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">КАТЕГОРИЯЛАР</span>
+                    <h2 class="section-title">Өзүңүзгө ылайыктуу стилди тандаңыз</h2>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="https://jaida.ca/cdn/shop/files/Blooms_of_Hope_Luxury_Chiffon_Hijab.jpg?v=1774440372&width=1863"
+                            alt="Хиджабдар">
+                        <div class="category-overlay">
+                            <h3>Хиджабдар</h3>
+                            <a href="#hijabs" class="category-link">Көрүү <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://i.etsystatic.com/31525373/r/il/80e56a/7065159882/il_570xN.7065159882_dci7.jpg"
+                            alt="Көйнөктөр жана Абаялар">
+                        <div class="category-overlay">
+                            <h3>Көйнөктөр</h3>
+                            <a href="#dresses" class="category-link">Көрүү <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0870/3361/0541/files/WhatsApp-Image-2022-08-17-at-4.45.30-PM_blog.jpg"
+                            alt="Юбкалар">
+                        <div class="category-overlay">
+                            <h3>Юбкалар</h3>
+                            <a href="#skirts" class="category-link">Көрүү <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0599/0816/1654/files/t32p7.1.jpg?v=1766025531"
+                            alt="Шымдар">
+                        <div class="category-overlay">
+                            <h3>Шымдар</h3>
+                            <a href="#pants" class="category-link">Көрүү <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIJABS SECTION -->
+        <section class="section products" id="hijabs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ЖАҢЫ КОЛЛЕКЦИЯ</span>
+                    <h2 class="section-title">Стилдүү жана заманбап хиджабдар</h2>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <span class="badge-tag new">New</span>
+                            <button class="wishlist-btn" title="Избранноего кошуу"><i
+                                    class="fa-regular fa-heart"></i></button>
+                            <img src="https://jaida.ca/cdn/shop/files/Blooms_of_Hope_Luxury_Chiffon_Hijab.jpg?v=1774440372&width=1863"
+                                alt="Silk Patterned Hijab">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Luxury Floral Chiffon</h3>
+                            <p class="product-desc">Premium printed chiffon fabric</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper">
+                                    <span class="price">1 490 сом</span>
+                                </div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <span class="badge-tag sale">Sale</span>
+                            <button class="wishlist-btn" title="Избранноего кошуу"><i
+                                    class="fa-regular fa-heart"></i></button>
+                            <img src="https://cdn.shopify.com/s/files/1/0870/3361/0541/files/WhatsApp-Image-2022-08-17-at-4.45.30-PM_blog.jpg"
+                                alt="Aesthetic Brown Hijab">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Dark Chocolate Silk</h3>
+                            <p class="product-desc">Aesthetic modern street style</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper">
+                                    <span class="price">1 350 сом</span>
+                                    <span class="old-price">1 700 сом</span>
+                                </div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <button class="wishlist-btn" title="Избранноего кошуу"><i
+                                    class="fa-regular fa-heart"></i></button>
+                            <img src="https://cdn.shopify.com/s/files/1/0599/0816/1654/files/t32p7.1.jpg?v=1766025531"
+                                alt="Classic Brown Hijab">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Coffee Brown Hijab</h3>
+                            <p class="product-desc">Premium Modal Silk</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper">
+                                    <span class="price">1 290 сом</span>
+                                </div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <span class="badge-tag new">New</span>
+                            <button class="wishlist-btn" title="Избранноего кошуу"><i
+                                    class="fa-regular fa-heart"></i></button>
+                            <img src="https://i.etsystatic.com/31525373/r/il/80e56a/7065159882/il_570xN.7065159882_dci7.jpg"
+                                alt="Ivory White Hijab">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ivory Elegance Silk</h3>
+                            <p class="product-desc">Natural Mulberry Silk</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper">
+                                    <span class="price">1 690 сом</span>
+                                </div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DRESSES SECTION -->
+        <section class="section products bg-light" id="dresses">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ЖАБЫК ЖАНА ЭЛЕГАНТТУУ</span>
+                    <h2 class="section-title">Мусулманча көйнөктөр жана Абаялар</h2>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://i.etsystatic.com/31525373/r/il/80e56a/7065159882/il_570xN.7065159882_dci7.jpg"
+                                alt="Elegant White Modest Dress">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">White Luxury Dress</h3>
+                            <p class="product-desc">Luxury Modest Evening Dress</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper"><span class="price">5 500 сом</span></div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <span class="badge-tag new">New</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://cdn.shopify.com/s/files/1/0870/3361/0541/files/WhatsApp-Image-2022-08-17-at-4.45.30-PM_blog.jpg"
+                                alt="Dark Chic Modest Outfit">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Chic Dark Modest Set</h3>
+                            <p class="product-desc">Modern Street Style Set</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper"><span class="price">4 800 сом</span></div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://cdn.shopify.com/s/files/1/0599/0816/1654/files/t32p7.1.jpg?v=1766025531"
+                                alt="Classic Brown Coat Abaya">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Classic Coat Abaya</h3>
+                            <p class="product-desc">Minimal Autumn Collection</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper"><span class="price">5 200 сом</span></div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://jaida.ca/cdn/shop/files/Blooms_of_Hope_Luxury_Chiffon_Hijab.jpg?v=1774440372&width=1863"
+                                alt="Floral Soft Dress">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Floral Silk Dress</h3>
+                            <p class="product-desc">Natural Soft Silk Fabric</p>
+                            <div class="product-bottom">
+                                <div class="price-wrapper"><span class="price">4 200 сом</span></div>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i> Себетке
+                                    кошуу</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMOTIONAL BANNER -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="promo-banner">
+                    <div class="banner-content">
+                        <span class="banner-subtitle">SARA COLLECTION SPECIAL</span>
+                        <h2 class="banner-title">Өзүңүздүн кайталангыс стилиңизди табыңыз</h2>
+                        <p class="banner-desc">Мусулман аялдары үчүн атайын тандалган премиум сапат, жеңил кездемелер
+                            жана заманбап бычылыштар.</p>
+                        <a href="#hijabs" class="btn btn-primary">Азыр көрүү</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GIFTS SECTION -->
+        <section class="section gifts-section" id="gifts">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ӨЗГӨЧӨ БЕЛЕКТЕР</span>
+                    <h2 class="section-title">Жакындарыңыз үчүн эстелик белектер</h2>
+                </div>
+                <div class="gifts-grid">
+                    <div class="gift-card">
+                        <div class="gift-icon"><i class="fa-solid fa-gift"></i></div>
+                        <h3>Sara Gift Card</h3>
+                        <p>Каалаган суммада белек сертификаты.</p>
+                        <a href="#" class="gift-link">Тандоо →</a>
+                    </div>
+                    <div class="gift-card highlight">
+                        <div class="gift-icon"><i class="fa-solid fa-box-open"></i></div>
+                        <h3>Hijab Box Set</h3>
+                        <p>3 премиум хиджаб камтылган атайын кутуча.</p>
+                        <a href="#" class="gift-link">Тандоо →</a>
+                    </div>
+                    <div class="gift-card">
+                        <div class="gift-icon"><i class="fa-solid fa-crown"></i></div>
+                        <h3>Luxury Silk Set</h3>
+                        <p>Жибек хиджабдар жана стилдүү аксессуарлар.</p>
+                        <a href="#" class="gift-link">Тандоо →</a>
+                    </div>
+                    <div class="gift-card">
+                        <div class="gift-icon"><i class="fa-solid fa-moon"></i></div>
+                        <h3>Ramadan Gift Set</h3>
+                        <p>Майрамдык өзгөчө даярдалган коллекция.</p>
+                        <a href="#" class="gift-link">Тандоо →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section class="section about-section" id="about">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="https://cdn.shopify.com/s/files/1/0870/3361/0541/files/WhatsApp-Image-2022-08-17-at-4.45.30-PM_blog.jpg"
+                        alt="Sara Collection Story">
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">БИЗ ЖӨНҮНДӨ</span>
+                    <h2 class="about-title">Sara Collection брендинин философиясы</h2>
+                    <p class="about-text">
+                        Биз мусулман аялдарынын назиктигин, диний нарктарын жана өзгөчө стилин жогору баалайбыз. Sara
+                        Collection ар бир коллекциясында заманбап тренддерди жана жабык, сылык эстетиканы айкалыштырат.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Сапаттуу премиум кездемелер</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Тез жана коопсуз жеткирүү</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Ар бир кардарга жеке мамиле</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOMER REVIEWS -->
+        <section class="section reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ПИКИРЛЕР</span>
+                    <h2 class="section-title">Кардарларыбыздын сөздөрү</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Sara Collection брендинен алган хиджабым абдан сапаттуу чыкты. Түсү да,
+                            кездемеси да аябай жакты."</p>
+                        <span class="author">— Айдана</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Көйнөктүн бычылышы өтө кенен жана ыңгайлуу, заманбап жабык стильде экен.
+                            Жеткирүү тез болду!"</p>
+                        <span class="author">— Назира</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Белек топтомун сатып алдым эле, таңгактоосу абдан премиум экен. Жакыныма
+                            эң сонун белек болду."</p>
+                        <span class="author">— Самара</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-moon"></i></span>
+                    <span class="logo-text">SARA <small>COLLECTION</small></span>
+                </a>
+                <p class="footer-about">
+                    Назиктикти, диний баалуулуктарды жана заманбап моданы айкалыштырган премиум мусулман кийимдери
+                    дүкөнү.
+                </p>
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">ДҮКӨН</h4>
+                <ul class="footer-links">
+                    <li><a href="#hijabs">Хиджабдар</a></li>
+                    <li><a href="#dresses">Көйнөктөр</a></li>
+                    <li><a href="#gifts">Белектер</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">МААЛЫМАТ</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">Биз жөнүндө</a></li>
+                    <li><a href="#">Жеткирүү шарттары</a></li>
+                    <li><a href="#">Төлөм ыкмалары</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">БАЙЛАНЫШ</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-phone"></i> +996 (555) 00-11-22</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +996 (700) 00-11-22</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@saracollection.kg</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Бишкек ш., Манас проспектиси 40</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Sara Collection. Бардык укуктар корголгон.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
